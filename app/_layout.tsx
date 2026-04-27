@@ -1,36 +1,41 @@
 import { Stack } from "expo-router";
 import "../global.css";
 import { useFonts } from "expo-font";
-import { View, ActivityIndicator } from "react-native";
+import { View, ActivityIndicator, Text } from "react-native";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import { useEffect } from "react";
+import * as SplashScreen from "expo-splash-screen";
+
+SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
-  const [fontsLoaded] = useFonts({
+  const [fontsLoaded, fontError] = useFonts({
     Fira: require("../assets/fonts/FiraSans-ExtraBold.ttf"),
     Rexa: require("../assets/fonts/RexaBold-Regular.otf"),
   });
 
-  if (!fontsLoaded) {
-    return (
-      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-        <ActivityIndicator />
-      </View>
-    );
-  }
+  useEffect(() => {
+    if (fontsLoaded || fontError) {
+      SplashScreen.hideAsync();
+    }
+  }, [fontsLoaded, fontError]);
 
   return (
-    <Stack>
-      <Stack.Screen
-        name="index"
-        options={{
-          headerShown: false,
-        }}
-      />
-      <Stack.Screen
-        name="(dashboard)"
-        options={{
-          headerShown: false,
-        }}
-      />
-    </Stack>
+    <SafeAreaProvider>
+      <Stack>
+        <Stack.Screen
+          name="index"
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="(dashboard)"
+          options={{
+            headerShown: false,
+          }}
+        />
+      </Stack>
+    </SafeAreaProvider>
   );
 }

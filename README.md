@@ -1,4 +1,4 @@
-# TitanRep - Fitness Workout Tracker 💪
+# ApnaGym
 
 A modern mobile fitness app built with Expo and React Native. Track your daily workouts, mark exercises as complete, and stay consistent with your training goals.
 
@@ -23,22 +23,26 @@ A modern mobile fitness app built with Expo and React Native. Track your daily w
 ## Get Started
 
 ### Prerequisites
+
 - Node.js & npm installed
 
 ### Installation
 
 1. Clone the repository
+
    ```bash
-   git clone https://github.com/mirza-zain/fitness-app.git
+   git clone https://github.com/haroonrasheed732/fitness-app.git
    cd fitness-app
    ```
 
 2. Install dependencies
+
    ```bash
    npm install
    ```
 
 3. Start the development server
+
    ```bash
    npm start
    ```
@@ -87,16 +91,19 @@ fitness-app/
 ## Key Features
 
 ### Redux State Management
+
 - Centralized exercise state
 - Real-time updates across all screens
 - Persistent data during session
 
 ### Navigation
+
 - Tab-based navigation (Home, Exercise)
 - Modal for adding new exercises
 - Deep linking to exercise details
 
 ### Responsive Design
+
 - Mobile-first approach
 - Adapts to different screen sizes
 - Safe area handling for notches
@@ -129,10 +136,6 @@ eas build
 eas build --preview
 ```
 
-## Download APK
-
-To grab the latest Android APK, check the GitHub **Releases** page for this repo. Each release contains the built APK you can install on your device.
-
 ## Contributing
 
 Feel free to fork this project and submit pull requests for improvements!
@@ -143,7 +146,7 @@ MIT License - feel free to use this project as a reference or starting point.
 
 ## Author
 
-**Mirza Zain** - [GitHub](https://github.com/mirza-zain)
+**HAROON-RASHEED** - [GitHub](https://github.com/haroonrasheed732)
 
 ## Resources
 

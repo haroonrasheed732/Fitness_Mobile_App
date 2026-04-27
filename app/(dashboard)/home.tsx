@@ -39,7 +39,7 @@ const Home = () => {
         <Text style={{padding: 2 ,fontSize: 20, textAlign: 'center', marginTop: 20, marginBottom: 8, fontWeight: 500 }}>
           {data?.quote || 'Loading...'}
         </Text>
-        <Text style={{ textAlign: 'center', fontSize: 15, fontWeight: 400 }}>"{data?.author}"</Text>
+        <Text style={{ textAlign: 'center', fontSize: 15, fontWeight: 400 }}>&quot;{data?.author}&quot;</Text>
         <View style={{ height: 16 }} />
         <Text style={{ fontSize: 22, fontWeight: '700', paddingHorizontal: 5, textDecorationLine: 'underline' }}>Continue Training</Text>
       </View>

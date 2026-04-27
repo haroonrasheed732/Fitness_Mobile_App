@@ -25,7 +25,7 @@ const DashboardLayout = () => {
                                 fontWeight: "700",
                                 textAlign: "left",
                                 color: "#ffff"
-                            }}>TitanRep</Text>
+                            }}>ApnaGYM</Text>
                         </View>
                     ),
                     tabBarStyle: {

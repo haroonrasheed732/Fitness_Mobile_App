@@ -74,7 +74,7 @@ const Days = () => {
 
       <View className="flex-1 pb-20"> 
         <Text className="text-xl font-bold mb-3 text-gray-800">
-          {activeDay}'s Routine
+          {activeDay}&apos;s Routine
         </Text>
 
         <FlatList
